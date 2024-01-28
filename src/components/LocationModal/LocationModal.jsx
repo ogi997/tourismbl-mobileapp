@@ -214,16 +214,14 @@ const LocationModal = ({ modalVisible, setModalVisible, editMode, id }) => {
               )}
             />
 
-            {isCurrentUserLastUser && (
-              <Button
-                mode="contained"
-                style={styles.button}
-                disabled={!(isCurrentUserLastUser && editMode)}
-                onPress={pickImage}
-              >
-                Add image
-              </Button>
-            )}
+            <Button
+              mode="contained"
+              style={styles.button}
+              // disabled={!(isCurrentUserLastUser && editMode)}
+              onPress={pickImage}
+            >
+              Add image
+            </Button>
 
             {image && (
               <View style={{ padding: 20 }}>
